@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Car Renting" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-171AVQP\SQLEXPRESS01;Initial Catalog=&quot;Car Renting&quot;;Integrated Security=True" SettingsObjectName="Car_Renting_System.Properties.Settings" SettingsPropertyName="Car_RentingConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Xe" Member="Xes">
+    <Type Name="Xe">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Bien_So" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Ten_Xe" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thue" Member="Thues">
+    <Type Name="Thue">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ten_KH" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CCCD" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Thoi_Gian" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phan_Loai" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Chon_Xe" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Tu_Ngay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Thanh_Tien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tempThue" Member="tempThues">
+    <Type Name="tempThue">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ten_KH" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CCCD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Thoi_Gian" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phan_Loai" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Chon_Xe" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Tu_Ngay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Thanh_Tien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
